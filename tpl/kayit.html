@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//TR"><html><head> 
+<meta http-equiv="Content-Type" content="text/html; charset=WINDOWS-1254">
+<meta http-equiv="Content-Language" content="tr" /> 
+<title>{$SOZLUK_ADI}</title> 
+<meta name="title" content="{$SOZLUK_ADI}" /> 
+<meta name="robots" content="index,follow,noarchive" /> 
+<meta name="description" content="{$SOZLUK_ADI}" /> 
+<meta name="keywords" content="{$SOZLUK_ADI}" /> 
+<link rel="stylesheet" href="images/default.css" type="text/css">
+<link rel="icon" href="/res/favicon.png" type="image/x-icon" /> 
+<link rel="shortcut icon" href="/res/favicon.png" type="image/x-icon" /> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+<script src="js/lib.js" language="javascript" type="text/javascript" ></script> 
+</head> 
+<!--
+sozlukspot.com up stats
+server farm: kopernick
+subd name: {$SOZLUK_ADI}
+up exeqution time: 0.0001 sec
+server id: 3
+start time: 18.02.2011 01:32:55
+--> 
+<body  > 
+<div style="margin:20px;margin-bottom:150px;"><div class="buyuk_baslik">{$SOZLUK_ADI} üyesi ol</div><div style="margin:10px;margin-left:0px;" >
+
+  <table border="0" cellpadding="0" cellspacing="0" >
+
+    <form name="yeniuye" action="islem.php?islem=kayit" method="post" onsubmit="return yeniuye_submit();" >
+
+      <tr>
+
+        <td>
+
+		<table width="100%" border="0" cellpadding="3" cellspacing="0" class="msj_tablo_back">
+
+             <tr>
+
+              <td width="150" class="msj_ozel_tablo_1"><strong>üye adınız</strong></td>
+
+              <td class="msj_ozel_tablo_2"><input name="kuladi" type="text" id="kuladi" value="" size="34" maxlength="30" >
+
+                 <font ></font></td>
+
+            </tr>
+
+            <tr>
+
+              <td  width="150" class="msj_ozel_tablo_1"><strong>şifre:</strong></font></td>
+
+              <td class="msj_ozel_tablo_2"><input name="sifre" type="password" id="sifre" value="" size="15" maxlength="50">
+
+                 <font ></font>                </td>
+
+            </tr>
+
+            <tr>
+
+              <td width="150" class="msj_ozel_tablo_1"><strong>şifrenizi tekrar girin:</strong></td>
+
+              <td class="msj_ozel_tablo_2"><input name="sifret" type="password" id="sifret" size="15" maxlength="50"></td>
+
+            </tr>
+
+            <tr>
+
+              <td width="150" class="msj_ozel_tablo_1"><strong>e-posta:</strong></td>
+
+              <td class="msj_ozel_tablo_2"><input name="email" type="text" id="email"  value="" size="35" >
+
+                 <font ></font>                </td>
+
+            </tr>
+
+            <tr>
+
+              <td width="150" class="msj_ozel_tablo_1"><strong>bulunduğunuz yer:</strong></td>
+
+              <td class="msj_ozel_tablo_2"><input name="sehir" type="text" id="sehir" size="10" value="" >
+
+                 <font ></font>              </td>
+
+            </tr>
+
+            <tr>
+
+              <td width="150" class="msj_ozel_tablo_1"><strong>doğduğun yıl:</strong></td>
+
+              <td class="msj_ozel_tablo_2"><input name="dogumyili" type="text" id="dogumyili" size="4" maxlength="4" value="19" >
+
+                 <font ></font>              </td>
+
+            </tr>
+
+            <tr>
+
+              <td width="150" class="msj_ozel_tablo_1"><strong>cinsiyet</strong></td>
+
+              <td class="msj_ozel_tablo_2"><select name="cinsiyet" id="cinsiyet">
+
+                  <option selected></option>
+
+                  <option >erkek</option>
+
+                  <option >kadin</option>
+
+                  <option >başka</option>
+
+                </select>
+
+                 <font ></font>              </td>
+
+            </tr>
+
+
+            <tr>
+
+              <td colspan="2" class="msj_ozel_tablo_1">
+
+              <div style="width:400px;color:#333333;font-size:10px;">
+
+              <li>{$SOZLUK_ADI} herkese açık bir sözlük çalışmasıdır. {$SOZLUK_ADI} giderek büyüyen yazar kadrosuna yeni yazarlar katmak istemekte, bunun yanında mevcut yazar kalitesini de korumak istemektedir. bu sebeple {$SOZLUK_ADI} sitemizde yazar alımları kontrol altında tutulmaktadır. {$SOZLUK_ADI} sitesinde yazar olmak için yukarıdakidaki formu doldurmanız gerekmektedir.</li>
+
+              <li>bir {$SOZLUK_ADI} yazarı olabilmek için sözlük formatı hakkında bilgi sahibi olmanız gereklidir. {$SOZLUK_ADI} sitesini üçüncü şahıslara hakaret etmek için kullanmak sözlükten uçurulma sebebidir. sözlük'ten uçurulmamak için sözlük kurallarına uymanız gerekmektedir.</li>
+
+              </div></td>
+
+            </tr>
+
+            <tr>
+
+              <td width="150" class="msj_ozel_tablo_1"></td>
+
+              <td class="msj_ozel_tablo_2">
+
+                  <input type="submit" name="uyesubmit" value="      go go go      " />                 </td>
+
+            </tr>
+
+        </table></td>
+
+      </tr>
+
+    </form>
+
+  </table>
+
+</div>
+
+<hr>
+
+<div align="center">2011 &copy; {$SOZLUK_ADI} kayıt formu</div>
+
+<script language="JavaScript" type="text/javascript">
+
+	document.yeniuye.kuladi.focus();
+
+	function yeniuye_submit(){
+
+		var d = document.yeniuye;
+
+		var reg = new RegExp("^([a-z0-9_]|\\-|\\.)+@((hotmsssail|\\-)+\\.)+[a-z]{2,4}$");
+
+		if(d.email.value.search(reg) >= 0 ){
+
+			return confirm("HOTMAIL'e gönderilen aktivasyon kodları \"JUNK MAIL\" klasörüne gitmektedir.\nEmail adresi olarak HOTMAIL'den başka email adresi girebiliyorsanız girmenizi tavsiye ederiz.");
+
+			d.email.focus();
+
+		/*}else if(d.soz_kabul.checked!=true){
+
+			alert("üyelik sözleşmesini kabul etmelisiniz.");
+
+			return false;*/
+
+		}else{
+
+			return true;
+
+		}
+
+	}
+
+</script>
+
+</div> 
+<!--
+sozlukspot.com stats
+server farm: kopernick
+subd name: {$SOZLUK_ADI}
+exeqution time: 0.0048 sec
+server id: 7
+time: 18.02.2011 01:32:55
+--> 
+</body> 
+</html> 

@@ -1,0 +1,36 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Address</title>
+<script type="text/javascript">
+var url;
+function submitURL() {
+url = document.getElementById("goTo").value;
+check = url.substr(0,7);
+check = check.toLowerCase();
+if (check != "http://")
+{
+url = "http://"+url;
+myURL.document.location.href = url;
+}
+else
+{
+myURL.document.location.href = url;
+}
+}
+</script>
+
+
+</head>
+
+<body>
+<form target="myURL" onsubmit="this.action=this.goTo.value">
+<b>Address:</b>&nbsp;<input type="text" name="goTo" onchange="submitURL()" size="90%" id="goTo">
+<hr>
+</form>
+<iframe name="myURL" border="0" frameborder="0" width="100%" height="90%"></iframe>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<?php if(!class_exists('raintpl')){exit;}?><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title><?php echo $SOZLUK_ADI;?></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<frameset rows="50,*" cols="*" frameborder="0" border="0" framespacing="0">
+    <frame src="tpl/<?php echo $BASEDIR;?>/index.php?frame=ust" name="spustkisim" scrolling="no" noresize="noresize" id="spustkisim" title="spustkisim" />
+
+    <frameset rows="*" cols="255,*" frameborder="0" border="0" framespacing="0">
+        <frame src="tpl/<?php echo $BASEDIR;?>/index.php?frame=sol" name="spsolkisim" scrolling="auto" id="spsolkisim" title="spsolkisim" noresize="noresize" />
+        <frame src="tpl/<?php echo $BASEDIR;?>/index.php?frame=orta" name="sportakisim" id="sportakisim" title="sportakisim" noresize="noresize" />
+    </frameset>
+
+    <noframes>
+        <body>
+            <form action="entry.php" name="baslik">
+                <h2>inci s&#246;zl&#252;k</h2>ba&#254;l&#253;k: <input type="text" name="k" id="k" value="" /> <input type="submit" name="getir" value="getir" />
+            </form>
+        </body>
+    </noframes>
+</frameset>
+</html>

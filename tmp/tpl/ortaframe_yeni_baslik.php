@@ -1,0 +1,48 @@
+<?php if(!class_exists('raintpl')){exit;}?>﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+<meta http-equiv="Content-Language" content="tr" />
+<title>naber panpa</title>
+<meta name="title" content="naber panpa" />
+<meta name="robots" content="index,follow,noarchive" />
+<meta name="description" content="naber panpa" />
+<meta name="keywords" content="naber panpa" />
+<link rel="stylesheet" href="tpl/images/default.css" type="text/css" /> 
+<link rel="icon" href="tpl//res/favicon_inci.png" type="image/x-icon" /> 
+<link rel="shortcut icon" href="tpl//res/favicon_inci.png" type="image/x-icon" /> 
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body  > 
+<h1 class="baslik_text"><a href="index.php?frame=orta&baslik=<?php echo $BASLIK_ADI;?>"><span class="baslik_text"><?php echo $BASLIK_ADI;?></span></a>&nbsp;</h1><br><table width="160" border="0"  cellpadding="0" cellspacing="0" align="right"  style="float:right;clear:right;margin:0px;margin-left:3px;"> 
+	<tr> 
+	<td> 
+<div style="margin-top:0px;clear:both;text-align:center;" ></div><table width="160" height="600" border="0"  cellpadding="0" cellspacing="0" id="ucubekisim4" style="display:block !important; position:static !important;width:160px !important;height:600px !important;overflow:visible !important"  ><tr style="display:block !important; position:static !important;width:160px !important;height:600px !important;overflow:visible !important" ><td style="display:block !important; position:static !important;width:160px !important;height:600px !important;overflow:visible !important" > 
+</td></tr></table>		</td> 
+	</tr> 
+</table> 
+<meta name="robots" content="noindex,follow,noarchive" /><div style="margin:35px;margin-bottom:0px;"><div class="hatavar">böyle bir şey (<?php echo $BASLIK_ADI;?>) yok. ama olabilir de.</div><ol style="margin:0px;margin-top:15px;" ><b>bilgi kaynakları:</b><li><u>ekşi sözlük</u>'teki <a href="index.php?frame=orta&baslik=<?php echo $BASLIK_ADI;?>" rel="nofollow" target="_blank" ><?php echo $BASLIK_ADI;?></a></a> başlığına bak.</li><li><u>uludağ sözlük</u>'teki <a href="http://www.uludagsozluk.com/k/asdasd-j/"  rel="nofollow" target="_blank" >asdasd j</a> başlığına bak.</li></ol></div><div style="margin:35px;margin-top:15px;margin-bottom:0px;" >ama aşağıdakiler belki işine yarar. bunun garantisini veremeyiz ama aklını başına al dikkatli ol.<ol style="margin-top:0px;" type="i" ></ol></div><table align='center'><tr><script language='javascript'>entry_td('ukte vereceğim','http://inci.sozlukspot.com/ss_index.php?sa=ukte&ba=asdasd j','biri bunu doldursun','ukte');</script></tr></table><br /> 
+<p style="display:;"> 
+<table width="100%" border="0" cellpadding="1" cellspacing="1" style="margin-top:10px;clear:both;"> 
+<?php if( $_SESSION['loggedin'] ){ ?>
+<fieldset style="border: 0pt none; margin: 0pt; padding: 0pt;">
+    <form id="ssg" action="islem.php?islem=entrygir" onsubmit="nof(window);submitted=true;return true;" method="post">
+    <input name="t" value="yaralı kurtularak seri katili göt eden adam" type="hidden"><br>
+    <input name="lt" value="25.08.2011 07:52:36" type="hidden">
+
+    "<?php echo $BASLIK_ADI;?>" hakkında kafanızda bir tanım veya verebileceğiniz bir örnek varsa eklemekten çekinmeyin:<br>
+<div style="text-align: right;">
+<input class="but" onclick="hen('d', '(bkz: ',')', 'hangi başlığa bkz veresi?')" value="(bkz: )" type="button">
+<input class="but" onclick="hen('d', '`','`', 'hangi başlığa, entry\'ye bu link?')" value="``" title="görünmez bkz" type="button">
+<input class="but" onclick="hen('d', '\n\r--- `spoiler` ---\n\r','\n\r--- `spoiler` ---\n\r', '')" value="-s!-" title="şpoyler ibaresi" type="button">
+<input class="but" onclick="var a=prompt('gidilecek adres', 'http://');if(a.length>0&amp;&amp;a!='http://')hen('d', '[' + a + ' ', ']', '');" value="http://" title="link" type="button">
+</div>
+  <textarea tabindex="1" rows="10" cols="80" name="d" id="d" onkeypress="dbln4(event,'ssg')" onchange="fff(window,this);"></textarea>
+  <input type="hidden" name="baslik" value="<?php echo $BASLIK_ADI;?>" />
+    <input tabindex="2" id="b" class="but" value="yolla" type="submit" name="entrygir"/>&nbsp;
+  
+  <input tabindex="3" id="b2" class="but" name="save" value="kenarda dursun" type="submit" />&nbsp;
+  </form></fieldset>
+  <?php } ?>
+</table> 
+</p> 
+</body> 
+</html> 
